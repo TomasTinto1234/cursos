@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <!--JQUERY-->
+    <script src="jquery-3.6.4.min.js"></script>   
+
+     <!-- El script de la librería-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+     integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Mis Estilos-->
+    <link href="css/estilos.css" rel="stylesheet">
+    <!--Mis SCRIPTS-->
+    <link href="js/index.js" rel="stylesheet">
+    <!--Pestañas html-->
+    <link rel="stylesheet" href="wform.html">
+
+    <title>Landing Page</title>
+</head>
+<body>
+
+    <header>
+        <!--NAV-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <img src="img/LogoMakr-1l04O8 (1).png" alt="logo" id="logo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#formContacto">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categoria
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#cursos">HTML</a></li>
+                      <li><a class="dropdown-item" href="#cursos">CSS</a></li>
+                      <li><a class="dropdown-item" href="#cursos">JAVASCRIPT</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div id="weather-container">
+                    <P class="pt-3">Buenos Aires</P>
+                    <div id="weather-image"></div>
+                    <div id="weather-temperature"></div>
+
+                  </div>
+               <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>-->
+              </div>
+            </div>
+          </nav>
+          <!--FIN NAV-->
+    </header>
+
+    <main>
+        <!--PRINCIPIO PRECENTACION DE LA ORGANIZACION-->
+        <section class="hero" id="inicio">
+            <div class="container w-50 py-5 d-flex flex-column align-items-center justify-content-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center-start">Cursos en línea gratuitos para alcanzar tus objetivos</h1>
+                        <br>
+                        <p class="text-center-start">¿Buscas adquirir nuevas habilidades? ¿Hay una afición que hace tiempo que quieres probar? Somos N-Academy, 
+                            uno de los principales destinos para aprender y enseñar en línea.</p>
+                        <br>
+                        <p class="text-center-start">Si el aprendizaje en línea es nuevo para ti y no sabes con seguridad por dónde empezar, estamos contigo. 
+                            Hemos seleccionado una colección gratuita de cursos para profesionales. Realiza uno de estos cursos y 
+                            adquiere habilidades nuevas (nosotros invitamos).</p>
+                        <br>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="#cursos"><button type="button" class="btn btn-success">Cursos Gratuitos</button></a>
+                    </div>
+                </div>
+            </div>  
+
+        </section>
+
+        <section class="hero-partebaja">
+            
+            <div class="container w-50 py-3 align-items-center justify-content-center">
+                <!--PRIMER CONTENEDOR-->
+                <div class="row">
+                    <div class="col-12 col-md-6 py-3 d-flex align-items-center justify-content-center">
+                        <img src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg" class="img-fluid" alt="Persona Estudiando - Persona Escribiendo" style="max-height: 500px;">
+                    </div>
+
+                    <div class="col-md-6 py-3 align-items-center justify-content-center">
+                        <h2>Habilidades que se adaptan a ti</h2>
+                        <p>Adquiere habilidades prácticas y valiosas mediante vídeos de cursos en línea gratuitos. Explora conocimientos técnicos esenciales y sigue el ritmo del cambio. 
+                            Aumenta tu concentración y productividad. Compleméntalo con cursos para perfeccionar tus 
+                            habilidades y enriquecer tu día a día.</p>
+                    </div>
+                </div>
+                <!--FIN PRIMER CONTENEDOR-->
+
+                <!--SEGUNDO CONTENEDOR-->
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex flex-column py-3 order-md-1" id="text-container">
+                        <h2>Desarrolla ya las habilidades del futuro</h2>
+                        <p>Obtén recursos gratuitos de líderes del sector para guiar a tu organización hacia sus objetivos. 
+                            Aprende estrategias para adaptarte, continuar creciendo.</p>
+                    </div>
+
+
+
+                    <div class="col-md-6 py-3 d-flex align-items-center justify-content-center order-md-2" id="image-container">
+                        <img src="https://images.pexels.com/photos/6347908/pexels-photo-6347908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="" style="max-height: 500px;">
+                    </div>
+                </div>
+                <!--FIN SEGUNDO CONTENEDOR-->
+
+                <!--TERCER CONTENEDOR-->
+                <div class="row">
+                    <div class="col-md-6 py-3 d-flex align-items-center justify-content-center">
+                        <img src="https://images.pexels.com/photos/5256523/pexels-photo-5256523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Persona Estudiando - Persona Escribiendo" style="max-height: 500px;">
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex flex-column py-3">
+                        <h2>Estilo de aprendizaje</h2>
+                        <p>Cada lección incluye videos, recursos indispensables, 
+                            gráficos, un editor incorporado con retos, una sección para preguntas y respuestas, y algunos juegos.</p>
+                    </div>
+                </div>
+                <!--FIN TERCER CONTENEDOR-->
+            </div>
+        <!--FIN PRECENTACION DE LA ORGANIZACION-->
+        </section>
+        <!--PRINCIPIO SECCION PRODUCTO-->
+        <section class="producto" id="cursos">
+            <div class="container py-5 d-flex align-items-center justify-content-center">
+                <div class="row">
+                    <div class="col-12 col-md-4 py-3 d-flex justify-content-center">
+                        <div class="card" style="width: 15rem;">
+                            <img src="img/html.svg" class="" alt="html">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">HTML</h5>
+                                <p class="card-text">Bienvenidos al curso de HTML. En este curso se explican todas las novedades incluídas en la especificación HTML.</p>
+                                <a href="wform.html" class="btn btn-success mt-auto">Inscríbete ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 py-3 d-flex justify-content-center">
+                        <div class="card" style="width: 15rem;">
+                            <img src="img/css.svg" class="" alt="css">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">CSS</h5>
+                                <p class="card-text">En este curso aprenderás las características más avanzadas de CSS partiendo completamente desde 0.</p>
+                                <a href="wform.html" class="btn btn-success mt-auto">Inscríbete ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 py-3 d-flex justify-content-center">
+                        <div class="card" style="width: 15rem;">
+                            <img src="img/js.svg" class="" alt="JavaScript">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">JavaScript</h5>
+                                <p class="card-text">Bienvenidos al curso de JavaScript desde 0. En este curso aprenderás a crear aplicaciones web utilizando JavaScript.</p>
+                                <a href="wform.html" class="btn btn-success mt-auto">Inscríbete ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </main>
+    <!--FOOTER-->
+        <footer id="footer">
+            <div class="container py-3 px-4">
+                <div class="row">
+                    <div class="col-12 py-3">
+                        <h3>Envía tus comentarios</h3>
+                        <p>Puedes utilizar el formulario de abajo para enviar tus comentarios y sugerencias.  Si estás haciendo un curso gratuito y tienes dudas, pregunta en los foros. ¡Muchas gracias!</p>
+                    </div>
+                    <form class="needs-validation row g-3" id="formContacto" novalidate>    
+                        <div class="col-12 py-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com" required>
+                                <div class="invalid-feedback">
+                                    Por favor ingresa una dirección de correo electrónico válida.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Ingrese un comentario</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor ingresa un mensaje.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-success" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>   
+            </div>
+        </footer>        
+        <section class="footer-partebaja">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6" id="redes">
+                        <i class="bi bi-facebook" style="font-size: 1.5rem; color: cornflowerblue;"></i>
+                        <i class="bi bi-instagram" style="font-size: 1.5rem; color: rgb(173, 44, 166);"></i>
+                        <i class="bi bi-linkedin" style="font-size: 1.5rem; color: rgb(9, 58, 149);"></i>       
+                    </div>
+                    <div class="col-6  d-flex justify-content-end align-items-center">
+                        <p><i class="bi bi-c-circle"></i>2023 - N-Academy</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<script>
+    // Obtener el formulario
+    var form = document.getElementById('formContacto');
+    // Agregar el evento submit al formulario
+    form.addEventListener('submit', function(event) {
+    // Validar los campos del formulario
+    if (form.checkValidity() === false) {
+    event.preventDefault();
+    }
+    form.classList.add('was-validated');
+    }, false);
+</script> 
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
